@@ -1,5 +1,5 @@
-# challenge-02: CSS & HTML Code Refactor
-## Code Refactor by Tyler Flynn
+# challenge-02: Advanced CSS: Portfolio
+## By Tyler Flynn
 tyler94flynn@gmail.com
 #
 
