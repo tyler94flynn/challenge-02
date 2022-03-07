@@ -79,7 +79,7 @@ header nav ul li a:hover {
 
 /* Hero */
 .hero {
-  background-image: url('../images/hero-img.jpg');
+  background-image: url('../images/hero-img.JPG');
   background-size: cover;
   display: flex;
   justify-content: center;
