@@ -2,7 +2,7 @@
 
 :root {
   --primary-colour: #242424;
-  --secondary-color: #000000;
+  --secondary-color: #000000a2;
   --tertiary-color: #ffffff;
 }
 
@@ -25,14 +25,13 @@ section {
 
 header {
   padding: 20px 35px;
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   position: sticky;
   
   top: 0;
-  background-image: url("../images/hero-img.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
@@ -109,46 +108,17 @@ header nav ul li a:hover {
   color: white;
 }
 
-/* Template from runbuddy - to be modified & fixed */
+/* About Section & Contact Section */
 
-
-
-/* FOOTER STYLES START */
-footer {
-  background: var(--primary-color);
-  padding: 40px 35px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
+section {
+  padding: 60px;
 }
 
-footer h2 {
-  color: var(--secondary-color);
-  font-size: 30px;
-  margin: 0;
-}
-
-footer div {
-  line-height: 1.5;
-  text-align: right;
-}
-
-footer a {
-  color: var(--secondary-color);
-}
-/* END FOOTER STYLES */
-
-
-
-
-
-
-/* SECTION TITLE STYLES START */
-.section-title {
+.section-title h2 {
   font-size: 48px;
   border-bottom: 3px solid;
   color: var(--secondary-color);
+  padding-top: 100px;
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
@@ -159,218 +129,78 @@ footer a {
   border-color: var(--primary-color);
 }
 
-.secondary-border {
-  border-color: var(--tertiary-color);
-}
-/* SECTION TITLE STYLES END */
-
-/* WHAT WE DO STYLES */
-.intro p {
-  line-height: 1.7;
-  color: var(--tertiary-color);
-  width: 80%;
-  margin: 0 auto;
+.flex-row p {
+  display: flex;
   font-size: 20px;
+  color: var(--secondary-color);
+  padding-bottom: 20px;
   text-align: center;
-}
-/* WHAT YOU DO STYLES END */
-
-
-/* WHAT YOU DO STYLES START */
-.steps { 
-  background: var(--primary-color);
+  margin: 0 auto 35px auto;
+  width: 50%;
 }
 
-.step {
-  margin: 50px auto;
-  padding-bottom: 50px;
-  width: 80%;
+.flex-row img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 35px;
+
+}
+
+.flex-row a {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.step:last-child {
-  border-bottom: none;
-}
-
-.step h3 {
+  font-size: 20px;
   color: var(--secondary-color);
-  font-size: 46px;
-  flex: 1 30%;
+  padding-bottom: 20px;
+  text-align: left;
+  margin: 0 auto 35px auto;
+  width: 50%;
 }
 
-.step-info {
-  flex: 2 70%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+/* Work section */
+.grid {
+  display:grid;
+grid-template-columns: 25% 25% 25% 25%;
+padding: 10px;
 }
 
-.step-img {
-  flex: 1 12%;
-  margin-right: 20px;
-}
-
-.step-img img {
-  max-width: 100%;
-}
-
-.step-text {
-  flex: 12;
-}
-
-.step-text p {
-  color: var(--tertiary-color);
-  font-size: 18px;
-}
-
-.step-text h4 {
-  font-size: 26px;
-  line-height: 1.5;
+.grid h3{
   color: var(--secondary-color);
-}
-/* WHAT YOU DO STYLES END */
-
-/* MEET THE TRAINERS START */
-.trainers {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
 }
 
-.trainer {
-  margin: 20px;
-  flex: 1;
-  background: var(--secondary-color);
-  color: var(--primary-color);
+.grid > div{
+  padding: 5px;
+  background-color: rgba(141, 141, 141, 0.5);
 }
 
-.trainer img {
-  width: 100%;
+.grid >div:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.76);
 }
 
-.trainer-bio {
-  padding: 25px;
-  line-height: 1.3;
+.item1 {
+  grid-area: 1 / 1 / span 1 / span 4;
 }
 
-.trainer-bio h3 {
-  font-size: 28px;
-}
-
-.trainer-bio h4 {
-  font-weight: lighter;
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-
-.trainer-bio p {
-  font-size: 17px;
-}
-/* TRAINER STYLES END */
-
-/* REACH OUT STYLES START */
-.contact {
-  background: var(--secondary-color);
-}
-
-.contact h2 {
-  color: var(--primary-color);
-}
-
-.contact-info {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact-info > * {
-  flex: 1;
-  margin: 15px;
-}
-
-.contact-info iframe {
-  height: 400px;
-}
-
-.contact-info div {
+.hvr :hover{
+  background: #555;
   color: white;
 }
 
-.contact-info h3 {
-  color: var(--primary-color);
-  font-size: 32px;
-}
 
-.contact-info p, .contact-info address {
-  margin: 20px 0;
-  line-height: 1.5;
-  font-size: 16px;
-  font-style: normal;
-}
 
-.contact-form input, .contact-form textarea {
-  border: 1px solid var(--secondary-color);
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: var(--secondary-color);
-  width: 100%;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  border-radius: 10px;
-  background-color: rgba(255,255,255, 0.75);
-}
+/* Adjustment for different size screens */
 
-.contact-form input:focus, .contact-form textarea:focus {
-  background-color: rgba(255,255,255, 1);
-  outline: none;
-}
-
-.contact-form button {
-  width: 100%;
-  border: none;
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 15px 0;
-  font-size: 16px;
-  border-radius: 10px;
-}
-
-.contact-form button:hover {
-  color: var(--primary-color);
-  background: var(--tertiary-color);
-}
-
-.contact-info a {
-  color: var(--primary-color);
-}
-/* REACH OUT STYLES END */
-
-/* UTILITIES */
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.flex-row {
-  display: flex;
-}
-
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 768px) {
   header {
     padding-bottom: 0;
     justify-content: center;
-    position: relative;
   }
 
   header h1 {
@@ -388,92 +218,29 @@ footer a {
     font-size: 20px;
   }
 
-  footer h2, footer div {
-    text-align: center;
-    width: 100%;
-  }
-
-  .hero-cta, .hero-form {
-    width: 100%;
-  }
-  
-  .hero-cta {
-    text-align: center;
-  }
-
   .section-title {
     width: 80%;
   }
-  
-  .trainer {
-    flex: 0 70%;
-  }
-  
-  .contact-info iframe{
-    flex: 1 100%;
-  }
-}
 
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
-  section {
+  .grid {
     padding: 30px 15px;
   }
 
-  .step h3 {
+  .grid h3 {
     flex: 1 100%;
     text-align: center;
   }
 
-  .step-info {
+  .grid {
     flex: 2 100%;
     text-align: center;
     justify-content: center;
   }
 
-  .step-img {
+  .grid img {
     flex: 0 32%;
     margin-right: 0;
     margin-top: 15px;
     margin-bottom: 15px;
-  }
-
-  .step-text {
-    flex: 100%;  
-  }
-
-  .trainer-bio h3, .trainer-bio h4 {
-    display: block;
-  }
-}
-
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
-  .hero-form button {
-    width: 100%;
-  }
-
-  .section-title {
-    width: 95%;
-  }
-
-  .intro p {
-    width: 100%;
-  }
-
-  .trainer {
-    flex: 0 100%;
-  }
-
-  .contact-info {
-    text-align: center;
-  }
-
-  .contact-info > * {
-    flex: 0 100%;
-  }
-
-  .contact-form {
-    order: 3;
   }
 }
