@@ -12,7 +12,7 @@ tyler94flynn@gmail.com
 
 ## Link to Page
 
-[https://tyler94flynn.github.io/challenge-01/](https://tyler94flynn.github.io/challenge-02/)
+[https://tyler94flynn.github.io/challenge-02/](https://tyler94flynn.github.io/challenge-02/)
 
 ## Description
 A template portfolio showcasing some CSS, contact information, and projects I've worked on.
